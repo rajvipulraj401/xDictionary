@@ -56,11 +56,9 @@ const App = () => {
       </form>
 
       <h3>Definition:</h3>
-      {/* <p>{definition}</p> */}
-
       {/* <p>{data[0].meaning}</p> */}
-
-      {word ? <p>{meaning}</p> : ""}
+      {/* IF we have the meaning then show it  */}
+      {meaning && <p>{meaning}</p>}
     </>
   );
 };
