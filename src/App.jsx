@@ -5,7 +5,7 @@ import data from "../Dictionary.json"; // directly using from .json file
 
 const App = () => {
   const [word, setWord] = useState("");
-  const [meaning, setMeaning] = useState("");
+  const [meaning, setMeaning] = useState("Word not found in the dictionary."); // Default message
   const handleChange = (e) => {
     setWord(e.target.value);
     setMeaning("");
