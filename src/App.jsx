@@ -58,7 +58,9 @@ const App = () => {
       <h3>Definition:</h3>
       {/* <p>{data[0].meaning}</p> */}
       {/* IF we have the meaning then show it  */}
-      {meaning && <p>{meaning}</p>}
+      {/* {meaning && <p>{meaning}</p>} */}
+      {/* Ensure this <p> always renders */}
+      <p>{meaning}</p>
     </>
   );
 };
